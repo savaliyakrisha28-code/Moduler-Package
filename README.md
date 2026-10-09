@@ -359,7 +359,7 @@ python Modular_Packager.py
 6. Follow the prompts in the terminal.
 7. Select **7. Exit** to close the application.
 
-> **Note:** The main file in this project is `Modular_Packager.py`, not `main.py`.
+> 
 
 ## 🖥️ Sample Output
 
