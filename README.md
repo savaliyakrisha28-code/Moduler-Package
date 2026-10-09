@@ -31,6 +31,38 @@
 | 📄 Main File            | `Modular_Packager.py`           |
 | 📦 Custom Package       | `custom_modules`                |
 
+## 🛠️ Technologies Used
+
+<div align="center">
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3.14.6-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/VS%20Code-Editor-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Visual Studio Code"/>
+  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</p>
+
+</div>
+
+### 🧰 Python Standard Library
+
+| Technology / Module | Used For |
+|---|---|
+| `datetime` | Current date/time, date differences, date formatting |
+| `time` | Stopwatch and countdown timer |
+| `math` | Mathematical calculations |
+| `random` | Random numbers, lists, passwords, OTPs, and sampling |
+| `uuid` | UUID version 4 generation |
+| `importlib` | Importing modules dynamically |
+| `dir()` | Exploring module attributes |
+| Custom Python modules | File operations and mathematical functions |
+
+**Tools:** Python, VS Code (or another Python editor), terminal/command prompt, Git, and GitHub.
+
+**Dependencies:** No third-party Python packages are required for the described features; the project uses Python's standard library and its own `custom_modules` package.
+
+---
+
 ## 📖 About the Project
 
 **Multi-Utility Toolkit** is a Python-based console application that brings multiple everyday utilities together in one program.
@@ -312,23 +344,33 @@ By developing this project, you can practice:
 * Standard-library module exploration.
 * Console application development.
 
-▶️ How to Run
-Open the Multi-Utility-Toolkit folder in VS Code.
-Open the terminal in that folder.
-Run this command:
-python Modular_Packager.py
-Choose an option by entering its number.
-Follow the prompts shown in the terminal.
-Choose 7. Exit from the main menu to close the program.
+## ▶️ How to Run
 
-🖥️ Sample Output
-🏠 Main Menu
-==================================================
-       🧰 Welcome to Multi-Utility Toolkit 🧰
-==================================================
+1. Open the `Multi-Utility-Toolkit` project folder in VS Code.
+2. Open the terminal in that folder.
+3. Make sure the `custom_modules` folder and its Python files are present.
+4. Run the main Python file:
+
+```bash
+python Modular_Packager.py
+```
+
+5. Enter the number of the utility you want to use.
+6. Follow the prompts in the terminal.
+7. Select **7. Exit** to close the application.
+
+> **Note:** The main file in this project is `Modular_Packager.py`, not `main.py`.
+
+## 🖥️ Sample Output
+
+The examples below show the expected style of the console output. Current date/time, random values, passwords, and UUIDs will vary each time you run the program.
+
+### 🏠 Main Menu
+
+```text
+Welcome to Multi-Utility Toolkit
 
 Choose an option:
-
 1. Datetime and Time Operations
 2. Mathematical Operations
 3. Random Data Generation
@@ -338,9 +380,12 @@ Choose an option:
 7. Exit
 
 Enter your choice:
-🕒 1. Date and Time Operations
---- Datetime and Time Operations ---
+```
 
+### 🕒 1. Date and Time Operations
+
+```text
+--- Datetime and Time Operations ---
 1. Display current date and time
 2. Calculate difference between two dates
 3. Format date into custom format
@@ -349,18 +394,22 @@ Enter your choice:
 6. Back to Main Menu
 
 Enter your choice: 1
-
 Current Date and Time: 2026-10-07 16:12:19
-📅 Calculate Difference Between Dates
-Enter your choice: 2
+```
 
+### 📅 Calculate Difference Between Dates
+
+```text
+Enter your choice: 2
 Enter the first date (YYYY-MM-DD): 2007-04-15
 Enter the second date (YYYY-MM-DD): 2006-12-19
-
 Difference: 117 days
-🧮 2. Mathematical Operations
---- Mathematical Operations ---
+```
 
+### 🧮 2. Mathematical Operations
+
+```text
+--- Mathematical Operations ---
 1. Calculate Factorial
 2. Calculate Compound Interest
 3. Trigonometric Calculations
@@ -368,20 +417,26 @@ Difference: 117 days
 5. Back to Main Menu
 
 Enter your choice: 1
-
 Enter a number: 5
 Factorial: 120
-💰 Compound Interest
-Enter your choice: 2
+```
 
+### 💰 Compound Interest
+
+```text
+Enter your choice: 2
 Enter principal amount: 1000
 Enter rate of interest (in %): 5
 Enter time (in years): 2
+Compound Interest: 1102.50
+```
 
-Compound Interest: 102.50
-🎲 3. Random Data Generation
+*The compound-interest output depends on whether your custom function returns the final amount or only the interest earned. Make sure this example matches `custom_modules/math_operations.py`.*
+
+### 🎲 3. Random Data Generation
+
+```text
 --- Random Data Generation ---
-
 1. Generate Random Number
 2. Generate Random List
 3. Create Random Password
@@ -390,19 +445,23 @@ Compound Interest: 102.50
 6. Back to Main Menu
 
 Enter your choice: 3
-
 Enter password length: 8
 Generated Password: 8DZLXAkW
-🆔 4. UUID Generation
+```
+
+### 🆔 4. UUID Generation
+
+```text
 --- Generate Unique Identifiers (UUID) ---
-
 Generated UUID: b5b4fe26-6d50-435c-8978-a44e8f10ec66
+```
 
-The UUID and random values will differ each time you run the program.
+*Your generated UUID will be different each time.*
 
-📂 5. File Operations
+### 📂 5. File Operations
+
+```text
 --- File Operations (Custom Module) ---
-
 1. Create a new file
 2. Write to a file
 3. Read from a file
@@ -410,40 +469,51 @@ The UUID and random values will differ each time you run the program.
 5. Back to Main Menu
 
 Enter your choice: 1
-
 Enter file name: example.txt
 File created successfully!
-✍️ Write Data to a File
-Enter your choice: 2
+```
 
+#### ✍️ Write to a File
+
+```text
+Enter your choice: 2
 Enter file name: example.txt
 Enter data to write: This is a sample file.
-
 Data written successfully!
-📖 Read File Contents
+```
+
+#### 📖 Read a File
+
+```text
 Enter your choice: 3
-
 Enter file name: example.txt
-
 File Content:
 This is a sample file.
-🔎 6. Explore Python Module Attributes
+```
+
+### 🔎 6. Explore Python Module Attributes
+
+```text
 --- Explore Module Attributes (dir()) ---
-
 Enter module name to explore: math
-
 Available Attributes in math:
 ['__doc__', '__loader__', '__name__', '__package__',
  '__spec__', 'acos', 'acosh', 'asin', 'asinh',
  'atan', 'atan2', 'ceil', 'comb', 'cos', 'degrees',
  'exp', 'factorial', 'floor', 'gcd', 'hypot', 'pi',
  'pow', 'radians', 'sin', 'sqrt', 'tan', 'trunc']
+```
 
-The complete attribute list depends on your Python version.
+*The full list of attributes can vary depending on the Python version.*
 
-🚪 7. Exit Application
+### 🚪 7. Exit Application
+
+```text
 Enter your choice: 7
+Thank you for using the Multi-Utility Toolkit!
+```
 
+---
 
 ## 📌 Summary
 
@@ -455,7 +525,7 @@ It demonstrates practical applications of Python's standard library, custom pack
 
 <div align="center">
 
-### 💖 Developed with Python 🐍
+###  Developed with Python 🐍
 
 **Created by Krisha Savaliya**
 
